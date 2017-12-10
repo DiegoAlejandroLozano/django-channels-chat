@@ -1,6 +1,6 @@
 ## Chat creado con Django 2.0 y Django Channels ##
 
-El presente proyecto es una aplicación de chat, desarrollada con Django y 
+El presente proyecto es una aplicación de chat desarrollada con Django y 
 con el Framework Channels. La aplicación consiste de una página principal 
 donde el usuario debe ingresar su nombre, para poder entrar al chat e interactuar 
 con los usuarios conectados. Todo el proceso de comunicación 
