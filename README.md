@@ -8,5 +8,4 @@ se realiza con WebSockets, implementados con la ayuda del Framework Channels de 
 
 
 > **Note:**
-
 > - Es muy importante tener en cuenta que se debe utilizar una versión de **Python 3.4, 3.5 o 3.6**, ya que se te utilizó **Django 2.0** para el desarrollo.
