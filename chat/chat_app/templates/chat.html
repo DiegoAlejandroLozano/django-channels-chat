@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="{% static 'materialize/css/materialize.min.css' %}"  media="screen,projection"/>
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+
+	<div class="container">
+	
+		<div class="row">
+			<div class="col 12">
+				<h1>chat</h1>
+			</div>
+		</div>
+		
+		<!--Conversación: Aquí viene toda la conversación-->
+		<div class="row" id="conversacion"></div>
+		
+		<!--Formulario-->
+		<div class="row">
+			<form action="" class="col s12" id="formulario">
+				<div class="row">					
+					<input type="text" name="texto" placeholder="texto" required>
+					<input type="hidden" name="nombre" value="{{nombre}}">
+					<button class="btn waves-effect waves-light" type="submit">
+						Enviar
+						<i class="material-icons right">send</i>
+					</button>					
+				</div>
+			</form>
+		</div>
+		
+	</div>
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="{% static 'materialize/js/materialize.min.js' %}"></script>
+	<script src="{% static 'chat_app/chat.js' %}"></script>
+</body>
+</html>
